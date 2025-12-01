@@ -104,6 +104,70 @@ export const demoConfigs: Record<string, any> = {
     },
   },
 
+  // Kenny Brown Well & Pump Services - 4.5★ (39 reviews)
+  kenny: {
+    business: {
+      name: "Kenny Brown Well & Pump Services",
+      tagline: "Trusted Well & Pump Experts",
+      phone: "(352) 245-3517",
+      email: "info@kennybrownwell.com",
+      address: {
+        street: "Serving Ocala Area",
+        city: "Ocala",
+        state: "FL",
+        zip: "34470",
+      },
+      hours: {
+        weekday: "Monday - Friday: 7:00 AM - 5:00 PM",
+        weekend: "Saturday: 8:00 AM - 2:00 PM",
+        sunday: "Sunday: Emergency Only",
+      },
+    },
+    serviceAreas: ["Ocala", "Marion County", "Silver Springs", "Belleview", "The Villages"],
+    seo: {
+      title: "Kenny Brown Well & Pump Services | Ocala, FL - 4.5★",
+      description: "Reliable well and pump services in Ocala with 39+ positive reviews. Expert well drilling, pump repair, and installation. Call (352) 245-3517",
+      keywords: "kenny brown well ocala, well pump service ocala, well drilling marion county, pump repair florida",
+      author: "Kenny Brown Well & Pump Services",
+    },
+    about: {
+      yearEstablished: "2000",
+      experience: "Over 20 years",
+    },
+  },
+
+  // B & C Enterprises Well Drilling and Pump Service - 4.8★ (13 reviews)
+  bandc: {
+    business: {
+      name: "B & C Enterprises Well Drilling and Pump Service",
+      tagline: "Professional Well Drilling & Pump Solutions",
+      phone: "(352) 629-1098",
+      email: "info@bandcwell.com",
+      address: {
+        street: "2890 NE 63rd St",
+        city: "Ocala",
+        state: "FL",
+        zip: "34479",
+      },
+      hours: {
+        weekday: "Monday - Friday: 7:00 AM - 6:00 PM",
+        weekend: "Saturday: 8:00 AM - 3:00 PM",
+        sunday: "Sunday: Closed",
+      },
+    },
+    serviceAreas: ["Ocala", "Silver Springs", "Fort McCoy", "Marion County", "Anthony"],
+    seo: {
+      title: "B & C Enterprises Well Drilling | Ocala, FL - 4.8★ Rated",
+      description: "Top-rated well drilling and pump service in Ocala with 4.8-star rating. Professional well installation and pump repairs. Call (352) 629-1098",
+      keywords: "b&c well drilling ocala, well drilling ocala fl, pump service marion county, water well installation",
+      author: "B & C Enterprises Well Drilling and Pump Service",
+    },
+    about: {
+      yearEstablished: "1998",
+      experience: "Over 25 years",
+    },
+  },
+
   // Add more demo clients here as needed
   template: {
     business: {
