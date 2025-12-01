@@ -9,6 +9,11 @@ export default async function Home({
 }) {
   const params = await searchParams;
   const siteConfig = getSiteConfig(params);
+
+  // Debug logging
+  console.log("Demo param:", params?.demo);
+  console.log("Business name:", siteConfig.business.name);
+
   return (
     <>
       <StructuredData type="organization" />
@@ -17,6 +22,9 @@ export default async function Home({
       <section className="relative bg-gradient-to-br from-primary-700 to-primary-900 text-white py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
+            {/* Debug info - remove after testing */}
+            <div className="text-xs mb-2 opacity-50">Demo: {params?.demo || "none"}</div>
+
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               {siteConfig.business.tagline}
             </h1>
