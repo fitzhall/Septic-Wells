@@ -2,8 +2,13 @@ import Link from "next/link";
 import { getSiteConfig } from "@/lib/get-site-config";
 import { StructuredData } from "@/components/StructuredData";
 
-export default function Home({ searchParams }: { searchParams: { demo?: string } }) {
-  const siteConfig = getSiteConfig(searchParams);
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Promise<{ demo?: string }>;
+}) {
+  const params = await searchParams;
+  const siteConfig = getSiteConfig(params);
   return (
     <>
       <StructuredData type="organization" />
