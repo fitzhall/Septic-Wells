@@ -2,10 +2,14 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { siteConfig } from "@/site.config";
+import { useSearchParams } from "next/navigation";
+import { getSiteConfig } from "@/lib/get-site-config";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const searchParams = useSearchParams();
+  const demo = searchParams.get("demo");
+  const siteConfig = getSiteConfig({ demo: demo || undefined });
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">

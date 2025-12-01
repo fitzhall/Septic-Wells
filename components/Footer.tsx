@@ -1,8 +1,14 @@
+"use client";
+
 import Link from "next/link";
-import { siteConfig } from "@/site.config";
+import { useSearchParams } from "next/navigation";
+import { getSiteConfig } from "@/lib/get-site-config";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const searchParams = useSearchParams();
+  const demo = searchParams.get("demo");
+  const siteConfig = getSiteConfig({ demo: demo || undefined });
 
   return (
     <footer className="bg-gray-900 text-gray-300">
