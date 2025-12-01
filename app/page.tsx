@@ -52,7 +52,7 @@ export default function Home({ searchParams }: { searchParams: { demo?: string }
             Why Choose {siteConfig.business.name}?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {siteConfig.about.highlights.map((highlight, index) => (
+            {siteConfig.about.highlights.map((highlight: string, index: number) => (
               <div key={index} className="text-center p-6">
                 <div className="text-5xl mb-4">✓</div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">{highlight}</h3>
@@ -72,7 +72,7 @@ export default function Home({ searchParams }: { searchParams: { demo?: string }
             We offer comprehensive septic and well services for residential and commercial properties.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {siteConfig.services.map((service) => (
+            {siteConfig.services.map((service: any) => (
               <div
                 key={service.id}
                 className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow"
@@ -110,7 +110,7 @@ export default function Home({ searchParams }: { searchParams: { demo?: string }
             Proudly serving the following communities:
           </p>
           <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
-            {siteConfig.serviceAreas.map((area, index) => (
+            {siteConfig.serviceAreas.map((area: string, index: number) => (
               <span
                 key={index}
                 className="bg-primary-100 text-primary-800 px-4 py-2 rounded-full font-medium"
